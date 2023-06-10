@@ -1,0 +1,139 @@
+body {
+    margin: 0px;
+    padding: 0px; 
+  
+}
+
+* {
+    margin: 18px;
+    padding: 18px;
+    box-sizing: border-box;
+}
+
+/* CONTENEDOR PADRE */
+.padre {
+    display: flex;
+    flex-flow: column nowrap;
+}
+/* HEADER */
+    .header {
+        background: black;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+        .menu {
+            background: rgb(198, 198, 198);
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            margin-bottom: 0px;
+        }
+            .logo {
+                background: rgb(127, 47, 255);
+                flex: 1 1 auto;
+            }
+            .nav {
+                background: rgb(127, 47, 255);
+                flex: 5 1 auto;
+            }
+            .social {
+                background: rgb(127, 47, 255);
+                flex: 1 1 auto;
+            }
+        .texto-principal {
+            background: rgb(198, 198, 198);
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+        }
+            h1 {
+                background: rgb(127, 47, 255);
+                flex: 1 1 auto;
+            }
+
+/* SECCIÓN CENTRAL */
+    .section {
+        background: black;
+        display: flex;
+    }
+        .articulos {
+            background: rgb(198, 198, 198);
+            display: flex;
+            flex-flow: row wrap;
+            flex: 2 1 auto;
+        }
+            .article {
+                background: rgb(127, 47, 255);
+                flex: 1 1 40%;
+            }
+            .navegacion {
+                background: rgb(127, 47, 255);
+                flex: 1 1 100%;
+            }
+        .aside {
+            background: rgb(198, 198, 198);
+            flex: 1 1 auto;
+        }
+            .publicidad {
+                background: rgb(127, 47, 255);
+            }
+
+/* FOOTER */
+    .footer {
+        background-color: black;
+    }
+        .pie {
+            background: rgb(198, 198, 198);
+        }
+
+/* MEDIA QUERYS */
+
+    /* X-Small devices (portrait phones, less than 576px) */
+    @media (max-width: 576px) { 
+
+        body {
+            background-color: rgb(252, 117, 234);
+            flex-direction: column;
+        }
+        .menu {
+            flex-direction: column;
+        }.section {
+            flex-direction: column;
+        }
+    }
+        
+    /* Medium devices portrait (tablets, 768px and up) */
+        @media (min-width: 576px) and (max-width: 1200px) and (orientation:portrait) {
+
+        body {
+            background-color: rgb(234, 255, 0);
+        }
+        .section {
+            flex-direction: column;
+        }
+    }
+
+    /* Medium devices landscape (tablets, 768px and up) */
+        @media (min-width: 576px) and (max-width: 1200px) and (orientation:landscape) {
+
+        body {
+            background-color: rgb(234, 255, 0);
+        }
+        .section {
+            flex-direction: row;
+        }
+    }
+
+    /* Large devices (desktops, less than 1200px)
+        @media (min-width: 1200px) {
+
+        body {
+            background-color: white;
+        }
+        .section {
+            flex-direction: row;
+        }
+    }
+
+  
+   
