@@ -100,6 +100,15 @@ body {
         }.section {
             flex-direction: column;
         }
+        .logo {
+            width: 82%;
+        }
+        .nav {
+            width: 82%;
+        }
+        .social {
+            width: 82%;
+        }
     }
         
     /* Medium devices portrait (tablets, 768px and up) */
@@ -120,7 +129,7 @@ body {
             background-color: rgb(234, 255, 0);
         }
         .section {
-            flex-direction: row;
+            flex-direction: column;
         }
     }
 
